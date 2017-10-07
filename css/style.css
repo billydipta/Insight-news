@@ -15,7 +15,7 @@ h1, h2, h3{
 
 h1 span{
 	font-size: 96px;
-	color: rgb(185,133,250);
+	color: #f92;
 }
 h2{
 	font-size: 60px;
@@ -54,11 +54,6 @@ img {
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-}
-
-h1 span
-{
-color: #f92;
 }
 
 /* The typing effect */
