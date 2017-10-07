@@ -14,12 +14,13 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	 -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- custom css code di bawah ini -->
-	<link rel="stylesheet" href="css/custom.css">
+	<!-- custom css code di atas -->
 	<title>Insight</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!--Navbar =========================================================================== -->
 
 	<div id="wrap">
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -30,15 +31,24 @@
   			</div>
 
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#myCarousel">Home</a></li>
 					<li><a href="#about">About</a></li>
+					<li><a href="#Application">Application</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">InsightNews <span class="caret"></span></a>
+        				<ul class="dropdown-menu">
+          					<li><a href="#">Description</a></li>
+						    <li><a href="#">Functional</a></li>
+						    <li><a href="#">ERD</a></li>
+						    <li><a href="#">Use Case</a></li>
+						</ul>
+      				</li>
 					<li><a href="#kontak">Kontak</a></li>
-					<li><a href="#insightnews">InsightNews</a></li>
+					
 				</ul>
 			</div>
 		</nav>
 
-<!--Header-->
+<!--Header =========================================================================== -->
 <header>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -52,11 +62,11 @@
     <div class="carousel-inner">
       <div class="item active">
       	<div class="carousel-caption">
-      		<h1 class="home-h1">iNSIGHT</h1>
-				<div class="typewriter" style="font-size: 40px;"><h3 class="home-h2">UX/UI Designer-Web developer-Blogger</h3></div> 
+      		<h1><span>iNSIGHT</span></h1>
+				<div class="typewriter" style="font-size: 40px;"><h3>UX/UI Designer-Web developer-Blogger</h3></div> 
 				</div>
 				
-        <img src="img/carou-1.jpg" alt="Los Angeles" style="width:100%;height: 638px;">
+        <img src="img/carou-3.jpg" alt="Los Angeles" style="width:100%;height: 638px;">
       </div>
 
       <div class="item">
@@ -64,7 +74,7 @@
       </div>
     
       <div class="item">
-        <img src="img/carou-3.jpg" alt="New york" style="width:100%;height: 638px;">
+        <img src="img/carou-1.jpg" alt="New york" style="width:100%;height: 638px;">
       </div>
     </div>
 
@@ -80,46 +90,101 @@
   </div>
 
 </header>
-		
-		<div class="portfolio" id="portfolio">
-			<div class="container">
-				<h2 class="portfolio-h2">Portfolio</h1>
-				<h3 class="portfolio-h3">
-					NaN. NULL. Zero. Katek nian. 
-				</h3>
-			</div>
-		</div>
 
-		<div class="separator1"></div>
-
-		<div class="ongoing" id="ongoing">
-			<div class="container">
-				<h2 class="ongoing-h2">Ongoing Project</h1>
-				<h3 class="ongoing-h3">
-					<p>Project yang akan kami kerjakan untuk tugas besar adalah News Portal.</p>
-				</h3>
-			</div>
-		</div>
-
-		<div class="separator2"></div>
-
-		<div class="about" id="about">
-			<div class="container">
-				<h2 class="about-h2">About</h1>
-				<h3 class="about-h3">
+<!--About  =========================================================================== -->
+<section id="about">
+	<div class="container">
+				<h2>About</h2>
+				
 					<p>
 						Insight adalah kelompok yang beranggotakan Henzo, Billy, Ewaldo, dan Trisno.
 						Kelompok ini terbentuk pada tanggal 11 september 2017.
 					</p>
-				</h3>
+				
 			</div>
 		</div>
+</section>
 
-	</div>
+<section id="Application">
+
+	<h2>Applications</h2>
+				
+	<div class="col-sm-4 portfolio-item">
+            <a href="#">  <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+              <a href="#">
+              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            
+</section>
+		
+<!--InsightNews  =========================================================================== -->
+
+<!--Contact  =========================================================================== -->
+
+<section id="contact">
+    <div id="google-map" class="wow fadeIn" data-latitude="-3.214599" data-longitude="104.64871219999998" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+          </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+                </div>                        
+                <div class="form-group">
+                  <button type="submit" class="btn-submit">Send Now</button>
+                </div>
+              </form>   
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <ul class="address">
+                  <li><i></i> <span> Alamat:</span> KM 32 Indralaya </li>
+                  <li><i> <span> Phone:</span> +62812 717171762  </li>
+                  <li><i> <span> Email:</span> paketbesak@gmail.com</li>
+                  <li><i> <span> Website:</span> <a href="www.insightbambam.azurewebsites.com">www.insightnews.com</a></li>
+                </ul>
+              </div>                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section><!--/#contact-->		
+
+<!--Footer  =========================================================================== -->
 
 	<footer id="footer">
 		<div class="container">
-			<p>&copy; 7 - Insight - Praktikum Pemrograman Web</p>
+			<p>&copy; 2017 - Insight - Praktikum Pemrograman Web</p>
 		</div>
 	</footer>
 

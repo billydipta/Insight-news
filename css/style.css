@@ -1,60 +1,21 @@
-nav{
+nav{ 	
 	/*padding-left: 15.47%;
 	padding-right: 15.47%*/
 	padding-left: 10%;
 	padding-right: 10%
 }
 
-.home,
-.portfolio,
-.ongoing,
-.about,
-.separator{
-	position: relative;
-	top: 50px;
-	height: auto;
-	min-width: 100%;
-	padding-bottom: 2.5%;
-	font-family: segoe ui;
-}
-
-.home{
-	padding-top: 1.5%;
-	background-color: #333;
-	padding-bottom: 2.5%;
-}
-
-.portfolio{
-	background-color: #fff;
-}
-
-.ongoing{
-	top: 0px;
-	background-color: #fff;
-}
-
-.about{
-	top: 0px;
-	background-color: #fff;
-}
-
-.separator1{
-	height: 500px;
-	background-image: url(../img/leaves2.png);
-}
-.separator2{
-	height: 500px;
-	background-image: url(../img/leaves3.png);
-}
-
 h1, h2, h3{
 	padding-left: 10%;
 	padding-right: 10%;
 	text-align: justify;
+	color: rgb(240, 240, 240);
+	text-align: center;
 }
 
-h1{
+h1 span{
 	font-size: 96px;
+	color: rgb(185,133,250);
 }
 h2{
 	font-size: 60px;
@@ -63,14 +24,6 @@ h2{
 h3{
 	font-size: 30px;
 }
-
-.home-h1, .home-h2{
-	color: rgb(240, 240, 240);
-	text-align: center;
-}
-.portfolio-h2, .portfolio-h3{}
-.ongoing-h2, .ongoing-h3{}
-.about-h2, .about-h3{}
 
 footer{
 	font-family: segoe ui;
@@ -82,26 +35,40 @@ footer{
 	text-align: center;
 }
 
-#facebook, #twitter, #linkedin{
-	position: relative;
-	top: 10px;
-	border: 4px solid #fff;
-	padding-left: 1%;
-	padding-right: 1%;
-	padding-bottom: 0.5%;
+
+/*ranah billy */
+img {
+	width: 100%;
+}
+.portfolio-item {
+	  padding: 20px 20px 20px 20px;
 }
 
-#facebook{
-	background-color: white;
-	color: blue;
+/*tulisan berjalan */
+.typewriter h3 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
-#twitter{
-	background-color: white;
-	color: green;
+h1 span
+{
+color: #f92;
 }
 
-#linkedin{
-	background-color: white;
-	color: red;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
