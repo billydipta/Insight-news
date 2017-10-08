@@ -8,14 +8,17 @@ nav{
 h1, h2, h3{
 	padding-left: 10%;
 	padding-right: 10%;
+	padding-top: 45px;
 	text-align: justify;
 	color: rgb(240, 240, 240);
 	text-align: center;
 }
 
-h1 span{
-	font-size: 96px;
-	color: #f92;
+h1{
+	font-size: 60px;
+}
+
+h1 span{color: #f92;
 }
 h2{
 	font-size: 60px;
@@ -56,6 +59,7 @@ img {
     blink-caret .75s step-end infinite;
 }
 
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
